@@ -4,7 +4,7 @@
 def millipede(size)
   padding_offsets = ["  ", " ", "", " ", "  ", "   ", "    ", "   "]
   output = "    ╚⊙ ⊙╝\n"
-  for i in 0..size
+  for i in 0...size
     output += padding_offsets[i % 8] + "╚═(███)═╝\n"
   end
   return output
